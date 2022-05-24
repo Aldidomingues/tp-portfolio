@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP - JS</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Ej 1</h1>
+            <p style="font-size: 14px;">Ingresar tres valores.</p>
+
+            <div>
+                <label for="ej1-numero1">
+                    Numero 1:
+                </label>
+                <input type="number" id="ej1-numero1">
+
+
+                <label for="ej1-numero2">
+                    Numero 2:
+                </label>
+                <input type="number" id="ej1-numero2">
+
+
+                <label for="ej1-numero3">
+                    Numero 3:
+                </label>
+                <input type="number" id="ej1-numero3">
+
+                <button type="button" onclick="compararEjercicio1()">Comparar</button>
+
+                <p>Numero mayor: <span id="resultadoMayor">0</span></p>
+                <p>Numero menor: <span id="resultadoMenor">0</span></p>
+            </div>
+        </div>
+
+
+        <div>
+            <h1>Ej 2</h1>
+            <p>Ingresar dos valores.</p>
+
+            <label for="ej2_num1">Numero 1:</label>
+            <input type="number" id="ej2_num1">
+            <label for="ej2_num2">Numero 2:</label>
+            <input type="number" id="ej2_num2">
+            <button onclick="sumarEjercio2()">Sumar!</button>
+            <label for="resultado_ejer2">Resultado</label>
+            <input type="text" id="resultado_ejer2">
+        </div>
+
+        <div>
+            <h1>Ej 3</h1>
+            <p>Ingresar una palabra y un numero "n".</p>
+
+            <label for="ej3_palabra">Ingrese una palabra</label>
+            <input type="text" id="ej3_palabra">
+
+            <label for="ej3_num1">Ingrese las veces que desea repetir</label>
+            <input type="number" id="ej3_num1">
+
+            <button onclick="repetirEjer3()">Repetir</button>
+            <p id="resultado_ejer3"></p>
+        </div>
+
+        <div>
+            <h1>Ej 4</h1>
+            <p>Conversor de temperatura</p>
+
+            <label for="ej4_celsius">Grados celsius</label>
+            <input type="number" id="ej4_celsius">
+
+            <label for="ej4_fahrenheit">Grados fahrenheit</label>
+            <input type="number" id="ej4_fahrenheit">
+
+            <button onclick="convertirEjer4()">Convertir</button>
+
+            <p id="resultado_ej4"></p>
+        </div>
+
+        <div>
+            <h1>Ej 5</h1>
+            <p>Ingresar una palabra.
+            </p>
+            <label for="ej5_palabra">Ingrese una palabra</label>
+            <input type="text" id="ej5_palabra">
+
+            <p id="resultado_ej5"> </p>
+
+            <button onclick="calcularEjercio5()">Calcular</button>
+        </div>
+
+        <div>
+            <h1>Ej 6</h1>
+            <p>Ingresar un número.</p>
+
+            <label for="ej6_num1">Ingrese un numero:</label>
+            <input type="number" id="ej6_num1">
+
+            <button onclick="verificarEjercicio6()">Verificar</button>
+            <p id="resultado_ej6"> </p>
+
+        </div>
+
+        <div>
+            <h1>Ej 7</h1>
+            <p>Ingresar dos números.</p>
+            <label for="ej7_num1">Numero 1: </label>
+            <input type="number" id="ej7_num1">
+            <label for="ej7_num2">Numero 2: </label>
+            <input type="number" id="ej7_num2">
+
+            <button onclick="multiplosEjercicio7()">Verificar</button>
+            <p id="resultado_ej7"></p>
+
+        </div>
+
+        <div>
+            <h1>Ej 8</h1>
+            <p>Ingresar un numero.</p>
+
+            <label for="ej8_num1">Numero 1: </label>
+            <input type="number" id="ej8_num1" value="10">
+            <button onclick="primosEjercicio8()">Mostrar</button>
+
+            <p id="resultado_ej8"></p>
+
+        </div>
+        <div>
+            <h1>Ej 9</h1>
+            <p>Ingresar un nombre, un apellido, una edad y un ciudad de nacimiento:</p>
+            <p><i>"Mi nombre es NOMBRE APELLIDO, tengo EDAD años. Nací en la ciudad de CIUDAD."</i></p>
+
+            <label for="ej9_nombre">Nombre: </label>
+            <input type="text" id="ej9_nombre">
+            <label for="ej9_apellido">Apellido: </label>
+            <input type="text" id="ej9_apellido">
+            <label for="ej9_edad">Edad: </label>
+            <input type="number" id="ej9_edad">
+            <label for="ej9_ciudad">Ciudad: </label>
+            <input type="text" id="ej9_ciudad">
+
+            <button onclick="fraseEjercicio9()">Mostrar</button>
+
+            <p id="resultado_ej9"></p>
+
+        </div>
+
+        <div>
+            <h1>Ej 10</h1>
+            <p>
+                Ingresar dos valores enteros.
+            </p>
+            <label for="ej10_num1">Numero 1: </label>
+            <input type="number" id="ej10_num1">
+            <label for="ej10_num2">Numero 2: </label>
+            <input type="number" id="ej10_num2">
+
+            <button onclick="mostrarEjercicio10()">Mostrar</button>
+            <p id="resultado_ej10"></p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="../assets/js/functions.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>
